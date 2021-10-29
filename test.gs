@@ -98,7 +98,8 @@ function reliability(array){
 
 function sendLine(password){
   //Lineに送信するためのトークン
-  var strToken = "1YvJOBFTPIDlech6JAeGEBn5yLR6jFImM6GTWTNrri9";
+  //以下にトークンを入力する
+  var strToken = "";
   var options =
   {
     "method"  : "post",
