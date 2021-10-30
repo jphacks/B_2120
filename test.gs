@@ -8,13 +8,12 @@ function myFunction() {
   var myMessages = GmailApp.getMessagesForThreads(myThreads);
   
   for(var j in myMessages[0]){
-
-    //スターがないメッセージのみ処理
     if(!myMessages[0][j].isStarred()){
       
       var strDate　=　myMessages[0][j].getDate();
       var elapsedTime = now.getTime() - strDate.getTime();
       var mins = elapsedTime / (1000 * 60);
+	  
       if (mins <= 5){
         console.log("if文クリア");
         var strSubject　=　myMessages[0][j].getSubject();
